@@ -7,7 +7,9 @@
     }
      /*------------------ Hero-Mobile------------------ */
     
-     
+     .hero-container {
+        max-width: 100%;
+     }
     }
     /*------------------ Planning-Mobile------------------ */
     .planning-link{

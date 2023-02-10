@@ -8,12 +8,12 @@
    /*------------------ Hero-Desktop------------------ */
    .hero {
     background-size: 1440px 600px;
-    padding-top: 188px;
-padding-bottom: 188px;
+    padding: 188px 473px;
+
    }
    .hero-title{
     width: 500px;
-    text-align: center;
+    line-height: 1.07;
     margin: 0 auto 48px;
    } 
 
@@ -22,12 +22,17 @@ padding-bottom: 188px;
     padding-top: 120px;
     padding-bottom: 120px;
   }
+  .planning-icon-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
   .planning-icon-item {
     width: calc((100% - 72px) / 4);
     height: 112px;
     
   }
-    .planning-link {
+  .planning-link {
     width: 100%;
     height: 100%;
     display: flex;
@@ -43,18 +48,22 @@ padding-bottom: 188px;
 
   .planning-icon {
   }
-  .planning-title {
-    font-weight: 500;
-    font-size: 24px;
-  }
-  .planning-icon-list {
+  
+  .planning-list {
     display: flex;
     gap: 24px;
-    justify-content: center;
   }
+  .planning-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  
   .planning-text{
-    max-width: 264px;
+    min-width: 356px;
+    height: 72px;
   }
+  
   .actions {
     display: flex;
   }

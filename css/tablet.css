@@ -1,55 +1,52 @@
 @media screen and (min-width: 768px) {
-    .container {
-      max-width: 768px;
-    }
-    .container.container-mini {
-        max-width: 584px;
-    }
-     /*------------------ Hero-Tablet------------------ */
-     .hero {
-      padding-top: 112px;
-  padding-bottom: 108px;
-
-     }
-     .hero-title {
-      font-size: 56px;
-      width: 500px;
-      /* text-align: center; */
-      margin: 0 auto 40px;
+  .container {
+    max-width: 768px;
   }
-    /*------------------ Planning-Tablet------------------ */
-    .planning-link{
-      display: none;
-     }
-     .planning-list {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 72px;
-      }
-    .planning-item {
-         width: calc((100% - 24px) / 2);
-    }
-    .planning-title {
-        text-align: left;
-    }
-    .planning-text {
-       
-    }
-    .actions {
-        display: none;
-    }
-    /*------------------ Team-Tablet------------------ */
-    .team-list {
-        display: flex;
-       flex-wrap: wrap;
+  .container.container-mini {
+    max-width: 584px;
+  }
+  /*------------------ Hero-Tablet------------------ */
+  .hero {
+    padding: 112px 137px;
+   
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    width: 500px;
+    margin: 0 auto 40px;
+  }
+  /*------------------ Planning-Tablet------------------ */
+  .planning-link {
+    display: none;
+  }
+  .planning-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .planning-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .planning-title {
+    text-align: left;
+  }
+  .planning-text {
+  }
+  .actions {
+    display: none;
+  }
+  /*------------------ Team-Tablet------------------ */
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 64px;
-        
-      }
-      
-    .team-item {
-        width: calc((100% - 24px) / 2);
-    }
-    
   }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
