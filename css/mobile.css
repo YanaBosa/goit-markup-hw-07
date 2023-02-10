@@ -1,0 +1,19 @@
+@media screen and (min-width: 480px) {
+    .container {
+      width: 428px;
+    }
+    .container.container-mini {
+        max-width: 296px;
+    }
+     /*------------------ Hero-Mobile------------------ */
+    
+     
+    }
+    /*------------------ Planning-Mobile------------------ */
+    .planning-link{
+     display: none;
+    }
+    .actions {
+        display: none;
+    }
+  }

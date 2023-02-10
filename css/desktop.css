@@ -1,0 +1,72 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+  .container.container-mini {
+    max-width: 1158px;
+  }
+   /*------------------ Hero-Desktop------------------ */
+   .hero {
+    background-size: 1440px 600px;
+    padding-top: 188px;
+padding-bottom: 188px;
+   }
+   .hero-title{
+    width: 500px;
+    text-align: center;
+    margin: 0 auto 48px;
+   } 
+
+  /*------------------ Planning-Desktop------------------ */
+  .planning {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .planning-icon-item {
+    width: calc((100% - 72px) / 4);
+    height: 112px;
+    
+  }
+    .planning-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 24px 100px;
+    border-radius: 4px;
+    justify-content: center;
+    background: #f4f4fd;
+  }
+  .planning-item {
+    width: calc((100% - 72px) / 4);
+}
+
+  .planning-icon {
+  }
+  .planning-title {
+    font-weight: 500;
+    font-size: 24px;
+  }
+  .planning-icon-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+  .planning-text{
+    max-width: 264px;
+  }
+  .actions {
+    display: flex;
+  }
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
+  .team-item {
+    width: calc((100% - 68px) / 4);
+  }
+}
