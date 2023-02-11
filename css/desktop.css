@@ -7,14 +7,13 @@
   }
    /*------------------ Hero-Desktop------------------ */
    .hero {
-    background-size: 1440px 600px;
-    padding: 188px 473px;
+    /* background-size: 1440px 600px; */
+    padding-top: 188px;
+    padding-bottom: 188px;
 
    }
    .hero-title{
-    width: 500px;
-    line-height: 1.07;
-    margin: 0 auto 48px;
+   margin: 0 auto 48px;
    } 
 
   /*------------------ Planning-Desktop------------------ */
@@ -60,13 +59,14 @@
   }
   
   .planning-text{
-    min-width: 356px;
-    height: 72px;
+    min-width: 264px;
+    
   }
-  
+  /*------------------ Actions-Desktop------------------ */
   .actions {
     display: flex;
   }
+   /*------------------ Team-Desktop------------------ */
   .team {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -76,6 +76,44 @@
     gap: 24px;
   }
   .team-item {
-    width: calc((100% - 68px) / 4);
+    width: calc((100% - 72px) / 4);
   }
-}
+   /*------------------ Customers-Desktop------------------ */
+   .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .customers-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+        
+  }
+    /*------------------ Footer-Desktop------------------ */
+    .footer {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    .container-footer {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    
+    .footer-text {
+      min-width: 264px;
+      margin-right: 120px;
+    }
+    .input-footer-wrap {
+      margin-left: 80px;
+    }
+    .footer-form {
+      max-width: 453px;
+      flex-wrap: nowrap;
+      gap: 24px;
+    }
+    .footer-input {
+      width: 264px;
+    }
+  }
