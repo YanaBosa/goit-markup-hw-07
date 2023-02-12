@@ -19,6 +19,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="header">
@@ -29,12 +32,10 @@
           >
           <ul class="header-list list">
             <li class="header-item link">
-              <a href="./index.html" class="header-link link">Studio</a>
+              <a href="./index.html" class="header-link link current">Studio</a>
             </li>
             <li class="header-item link">
-              <a href="./portfolio.html" class="header-link link current">
-                Portfolio</a
-              >
+              <a href="./portfolio.html" class="header-link link"> Portfolio</a>
             </li>
             <li class="header-item link">
               <a href="" class="header-link link"> Contacts</a>
@@ -55,6 +56,79 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mob-menu-open" data-menu-open><svg class="icon-menu-open-btn " width="32" height="22">
+          <use href="./images/icons.svg#icon-menu-open-button"></use>
+        </svg></button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div>
+            <button type="button" class="mob-menu-close" data-menu-close>
+              <svg class="btn-menu-close" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black"></use>
+              </svg>
+            </button>
+            <nav>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item link">
+                <a href="./index.html" class="mob-menu-link link">Studio</a>
+              </li>
+              <li class="mob-menu-item link">
+                <a href="./portfolio.html" class="mob-menu-link link"> Portfolio</a>
+              </li>
+              <li class="mob-menu-item link">
+                <a href="" class="mob-menu-link link"> Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          </div>
+        <div>
+          <address class="mob-menu-contacts">
+            <ul class="mob-menu-contacts-list list">
+              <li>
+                <a href="tel:+110001111111" class="mob-menu-phone link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mob-menu-mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              
+            </ul>
+            <ul class="mob-menu-soc-list list">
+              <li class="mob-menu-soc-item">
+                <a href="" class="mob-menu-soc-link link">
+                  <svg class="mob-menu-soc-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-soc-item">
+                <a href="" class="mob-menu-soc-link link"
+                  ><svg class="mob-menu-soc-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-soc-item">
+                <a href="" class="mob-menu-soc-link link"
+                  ><svg class="mob-menu-soc-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-soc-item">
+                <a href="" class="mob-menu-soc-link link"
+                  ><svg class="mob-menu-soc-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+        </di>
+        </div>
       </div>
     </header>
     <main>
