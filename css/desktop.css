@@ -124,6 +124,14 @@
   .container-footer {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: baseline;
+  }
+  .footer-link {
+    justify-content: start;
+  }
+  .footer-soc-text,
+  .input-footer-text {
+    text-align: start;
   }
 
   .footer-text {
