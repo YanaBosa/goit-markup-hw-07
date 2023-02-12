@@ -40,6 +40,9 @@ img {
 .link {
   text-decoration: none;
 }
+.no-scroll {
+  overflow: hidden;
+}
 /*------------------ Header------------------ */
 .header {
   padding-top: 24px;
@@ -79,6 +82,17 @@ img {
   display: none;
 }
 /*------------------ Header-Mobile------------------ */
+.mob-menu-open {
+  display: block;
+  width: 32px;
+  height: 22px;
+  background-color: transparent;
+  cursor: pointer;
+  border-color: transparent;
+  border: 0;
+  padding: 0;
+
+}
 .mob-menu {
   position: fixed;
   top: 0;
@@ -90,12 +104,32 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.mob-menu > .container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+
+}
 .mob-menu-close {
+  width: 24px;
+  height: 24px;
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   display: block;
   margin-left: auto;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-close {
+.mob-menu-close:is(:hover, :focus) {
+  background-color: #404bbf;
+  fill: #ffffff;
 }
+
 .mob-menu-list {
   margin-bottom: 284px;
 }
@@ -134,8 +168,8 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mob-menu-phone {
   font-weight: 600;
-font-size: 36px;
-line-height: 1.11;
+font-size: 26px;
+line-height: calc(40 / 26);
 text-transform: capitalize;
 color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -151,9 +185,9 @@ color: #434455;
   }
 .mob-menu-soc-list {
   display: flex;
-  justify-content: center;
-  gap: 56px;
-  width: 328px;
+  justify-content: start;
+  gap: 54px;
+  
 }
 .mob-menu-soc-item {
   width: 40px;
@@ -577,8 +611,10 @@ color: #434455;
 
 /*------------------ Portfolio------------------ */
 .projects {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  /* padding-top: 96px;
+  padding-bottom: 120px; */
 }
 .project-content {
   display: block;
@@ -601,9 +637,14 @@ color: #434455;
 
 .projects-buttons-list {
   display: flex;
-  padding: 0px;
-  gap: 24px;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start;
+  /* padding: 0px; */
+  column-gap: 24px;
+  row-gap: 16px;
+ min-width: 263px;
+ height: 96px;
+ margin-bottom: 48px;
 }
 .projects-button-item {
 }
@@ -617,7 +658,8 @@ color: #434455;
   text-align: center;
   color: #4d5ae5;
   background: #f4f4fd;
-  padding: 12px 24px;
+  padding: 8px 16px;
+  /* padding: 12px 24px; */
   cursor: pointer;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
@@ -702,8 +744,7 @@ color: #434455;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0);
-  width: 408px;
-  min-height: 576px;
+  width: 288px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -734,8 +775,8 @@ color: #434455;
 
 .modal-title {
   font-weight: 500;
-  font-size: var(--text-font-size);
-  line-height: var(--text-lh);
+  font-size: 10px;
+  line-height: calc(16 / 10);
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -798,8 +839,8 @@ color: #434455;
   margin-bottom: 24px;
 }
 .check-text {
-  font-size: 12px;
-  line-height: 1.33;
+  font-size: 8px;
+  line-height: calc(16 / 8);
   letter-spacing: 0.04em;
   color: #757575;
   display: flex;
@@ -807,8 +848,8 @@ color: #434455;
   position: relative;
 }
 .link-text {
-  font-size: 12px;
-  line-height: 1.33;
+  font-size: 8px;
+  line-height:calc(16 / 8);
   letter-spacing: 0.04em;
   text-decoration-line: underline;
   color: #4d5ae5;

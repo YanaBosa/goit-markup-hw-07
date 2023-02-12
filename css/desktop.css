@@ -5,6 +5,16 @@
   .container.container-mini {
     max-width: 1158px;
   }
+/*------------------ Header-Desktop------------------ */
+.header-contacts-list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 40px;
+}
+  .current::after {
+    bottom: -28px;
+  }
    /*------------------ Hero-Desktop------------------ */
    .hero {
     /* background-size: 1440px 600px; */
@@ -115,5 +125,10 @@
     }
     .footer-input {
       width: 264px;
+    }
+
+    .modal {
+      width: 408px;
+    min-height: 586px;
     }
   }

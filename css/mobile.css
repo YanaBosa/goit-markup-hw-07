@@ -5,6 +5,17 @@
     .container.container-mini {
         max-width: 296px;
     }
+     /*------------------ Header-Mobile------------------ */
+     .mob-menu-phone {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: calc(40 / 36);
+
+     }
+     .mob-menu-soc-list {
+      gap: 56px;
+     }
+
      /*------------------ Hero-Mobile------------------ */
     .hero {
       background-image: linear-gradient(
@@ -27,7 +38,7 @@
      .hero-container {
         max-width: 100%;
      }
-    }
+    
     /*------------------ Planning-Mobile------------------ */
     .planning-link{
      display: none;
@@ -39,4 +50,19 @@
 
       /*------------------ Footer-Mobile------------------ */
 
+      /*------------------ Portfolio-Mobile------------------ */
+      
+      /*------------------ Modal-Mobile------------------ */
+      .modal {
+        width: 424px;
+      }
+      .modal-title {
+        font-size: var(--text-font-size);
+  line-height: var(--text-lh);
+      }
+      .check-text, .link-text {
+        font-size: 12px;
+        line-height: calc(16 / 12);
+
+      }
   }
