@@ -1,68 +1,67 @@
 @media screen and (min-width: 480px) {
-    .container {
-      max-width: 428px;
-    }
-    .container.container-mini {
-        max-width: 296px;
-    }
-     /*------------------ Header-Mobile------------------ */
-     .mob-menu-phone {
-      font-weight: 600;
-      font-size: 36px;
-      line-height: calc(40 / 36);
+  .container {
+    max-width: 428px;
+  }
+  .container.container-mini {
+    max-width: 296px;
+  }
+  /*------------------ Header-Mobile------------------ */
+  .mob-menu-phone {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+  }
+  .mob-menu-soc-list {
+    gap: 56px;
+  }
 
-     }
-     .mob-menu-soc-list {
-      gap: 56px;
-     }
-
-     /*------------------ Hero-Mobile------------------ */
-    .hero {
-      background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero-bg-tablet.jpg);
-    }
-    @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .hero  {
-      background-image: linear-gradient(
+  /*------------------ Hero-Mobile------------------ */
+  .hero {
+    background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-bg-tablet2x.jpg);
+      url(../images/hero-bg-tablet.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tablet2x.jpg);
+    }
+  }
+  .hero-container {
+    max-width: 100%;
+  }
+
+  /*------------------ Planning-Mobile------------------ */
+  .planning-link {
+    display: none;
+  }
+  .actions {
+    display: none;
+  }
+  /*------------------ Customers-Mobile------------------ */
+
+  /*------------------ Footer-Mobile------------------ */
+
+  /*------------------ Portfolio-Mobile------------------ */
+
+  /*------------------ Modal-Mobile------------------ */
+  .modal {
+    width: 424px;
+  }
+  .modal-title {
+    font-size: var(--text-font-size);
+    line-height: var(--text-lh);
+  }
+  .check-text,
+  .link-text {
+    font-size: 12px;
+    line-height: calc(16 / 12);
   }
 }
-     .hero-container {
-        max-width: 100%;
-     }
-    
-    /*------------------ Planning-Mobile------------------ */
-    .planning-link{
-     display: none;
-    }
-    .actions {
-        display: none;
-    }
-     /*------------------ Customers-Mobile------------------ */
-
-      /*------------------ Footer-Mobile------------------ */
-
-      /*------------------ Portfolio-Mobile------------------ */
-      
-      /*------------------ Modal-Mobile------------------ */
-      .modal {
-        width: 424px;
-      }
-      .modal-title {
-        font-size: var(--text-font-size);
-  line-height: var(--text-lh);
-      }
-      .check-text, .link-text {
-        font-size: 12px;
-        line-height: calc(16 / 12);
-
-      }
-  }
