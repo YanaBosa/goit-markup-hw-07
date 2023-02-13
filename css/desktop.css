@@ -21,6 +21,7 @@
     padding-bottom: 188px;
   }
   .hero-title {
+    width: 100%;
     margin: 0 auto 48px;
   }
 
@@ -125,6 +126,7 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: baseline;
+    
   }
   .footer-link {
     justify-content: start;
@@ -135,7 +137,7 @@
   }
 
   .footer-text {
-    min-width: 264px;
+    width: 100%;
     margin-right: 120px;
   }
   .input-footer-wrap {
@@ -147,7 +149,7 @@
     gap: 24px;
   }
   .footer-input {
-    width: 264px;
+    max-width: 264px;
   }
 /*------------------ Modal-Desktop------------------ */
   .modal {

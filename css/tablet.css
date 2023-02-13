@@ -93,7 +93,7 @@
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/hero-bg2x.jpg);
-    }
+    }}
     .hero-title {
       font-size: 56px;
       line-height: 1.07;
@@ -184,5 +184,5 @@
       width: 408px;
       min-height: 586px;
     }
-  }
+  
 }
